@@ -52,7 +52,6 @@ struct PeripheralListView: View {
     class ViewModel: ObservableObject {
         @Published var peripherals: [CBPeripheral] = []
         @Published var isConnecting: Bool = false
-        @Published var connecteSucceededUUID: UUID?
         @Published var connectedUUIDs: Set<UUID> = Set([])
         
         private let ble = MyPeripheralCentralManager()
