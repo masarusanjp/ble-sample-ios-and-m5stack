@@ -28,6 +28,7 @@ class MyPeripheralTextWriter: NSObject, CBPeripheralDelegate {
         }
         if isWriting {
             completion(nil)
+            return
         }
         isWriting = true
         writingText = text
